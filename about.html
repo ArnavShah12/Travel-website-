@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About — Travel-Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Travel-<span>Site</span></a>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section intro">
+            <div class="container narrow">
+                <h1>About Travel-Site</h1>
+                <p>We design simple, clear travel pages that focus on what matters: where to go, how it feels, and how to plan it without stress.</p>
+            </div>
+        </section>
+
+        <!-- Three distinct sections -->
+        <section class="section grid-3 container">
+            <article class="panel">
+                <h2>Our Mission</h2>
+                <p>Make trip planning approachable by giving concise guides and honest suggestions for different kinds of travelers.</p>
+            </article>
+            <article class="panel">
+                <h2>Our Vision</h2>
+                <p>Curate calm, trustworthy travel content that encourages slower, more mindful journeys across cities, mountains, and coasts.</p>
+            </article>
+            <article class="panel">
+                <h2>Why Travel With Us</h2>
+                <p>We keep pages lightweight and readable so that picking a destination feels simple, not overwhelming.</p>
+            </article>
+        </section>
+
+        <!-- Section with large CSS background image and overlay for readability -->
+        <section class="section spotlight">
+            <div class="container narrow">
+                <h2>Where Planning Meets Ease</h2>
+                <p>Our featured guides combine maps, short checklists, and photo references so you can focus on the experience instead of logistics.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Travel-Site</p>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

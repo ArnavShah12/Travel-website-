@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel-Site — Explore The World</title>
+    <!-- Typography: Poppins for clean, readable sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Icons for social in footer (CSS only) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/JMKBW2W4R6V0w3VhZ8G3LkZbqj5rVtG5bqYb1r4a1Qm4rj3l6s1oY5H8b5V3x5m5m4r5Y0e3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky site header with navigation -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Travel-<span>Site</span></a>
+            <nav class="nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero banner with exploration-themed image -->
+        <section class="hero" role="banner">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <h1>Travel-Site</h1>
+                <p>Thoughtful guides for cities, mountains, and beaches—crafted with care.</p>
+                <a class="btn cta" href="#destinations">Start Exploring</a>
+            </div>
+        </section>
+
+        <!-- Highlights: 3 featured destinations presented as simple cards -->
+        <section id="destinations" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Featured Destinations</h2>
+                    <p>Three unique places to inspire your next journey.</p>
+                </header>
+
+                <div class="card-grid">
+                    <!-- City card -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1600&auto=format&fit=crop" alt="Modern city skyline at dusk">
+                        <div class="card-body">
+                            <h3>Urban Discovery</h3>
+                            <p>Walk bustling streets, sample local cafés, and find quiet parks between landmarks for a balanced city escape.</p>
+                        </div>
+                    </article>
+
+                    <!-- Mountain card -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop" alt="Mountain range with soft morning light">
+                        <div class="card-body">
+                            <h3>Mountain Retreat</h3>
+                            <p>Slow down among forests and peaks. Clear trails, fresh air, and simple cabins make time move gently.</p>
+                        </div>
+                    </article>
+
+                    <!-- Beach card -->
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop" alt="Calm turquoise beach with gentle waves">
+                        <div class="card-body">
+                            <h3>Beach Resort</h3>
+                            <p>Warm sand, ocean breeze, and unhurried mornings. Read, swim, and watch the sky shift colors at sunset.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Simple footer with socials -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Travel-Site</p>
+            <div class="social">
+                <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a aria-label="LinkedIn" href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // tiny progressive enhancement for year (no framework)
+    document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
